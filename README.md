@@ -14,7 +14,7 @@ You must have a valid license (e.g. via NIS Ticket) to use or redistribute this 
 
 ## 2. Generate the Condensed Variant
 
-I've provide a simple Python script (`main.py`) based on [fontTools] that:
+I've provide a simple Python script (`font-modifier.py`) based on [fontTools] that:
 
 1. Reads your downloaded `NIS-JTC-Win-M9.ttf`  
 2. Scales _only_ the Basic-Latin glyphs by your chosen X/Y factors  
@@ -23,11 +23,11 @@ I've provide a simple Python script (`main.py`) based on [fontTools] that:
 ```
 pip install fonttools
 
-#python main.py NIS-JTC-Win-M9.ttf NIS-JTC-Win-M9-shrink.ttf <scale_x> <scale_y>
+#python font-modifier.py NIS-JTC-Win-M9.ttf NIS-JTC-Win-M9-shrink.ttf <scale_x> <scale_y>
 #<scale_x>  0.78 (78 %)
 #<scale_y>  1.15 (115 %)
 
-python main.py NIS-JTC-Win-M9.ttf NIS-JTC-Win-M9-shrink.ttf 0.78 1.15
+python font-modifier.py NIS-JTC-Win-M9.ttf NIS-JTC-Win-M9-shrink.ttf 0.78 1.15
 ```
 
 before:  
